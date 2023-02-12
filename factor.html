@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحه ورود</title>
+    <link rel="stylesheet" href="css/login.css">
+    <script src="js/login.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <p>Factor</p>
+    </header>
+
+
+    <article>
+        <div class="index_div">
+            <form method="dialog" action="#">
+                <div class="margin_top">
+                    <label for="mahsol">Name: </label>
+                    <br>
+                    <input type="text" name="mahsol" id="name">
+                </div>
+
+                <div class="margin_top">
+                    <label for="tedad">Number: </label>
+                    <br>
+                    <input type="text" name="tedad" id="no">
+                </div>
+
+                <div class="margin_top">
+                    <label for="geimat">Price: </label>
+                    <br>
+                    <input type="text" name="geimat" id="value">
+                </div>
+
+                <br>
+                <input type="button" value="Add" onclick="add()">
+            </form>
+        </div>
+
+
+        <div id="result_s">
+            <div id="no1"></div>
+        </div>
+
+
+    </article>
+
+
+    <div id="edit_s" class="edit">
+        <div class="margin_top">
+            <label id="lblediting_1" for="editing_1">Name: </label>
+            <input type="text" id="editing_1">
+        </div>
+        <div class="margin_top">
+            <label id="lblediting_2" for="editing_2">Number: </label>
+            <input type="text" id="editing_2">
+        </div>
+        <div class="margin_top">
+            <label id="lblediting_3" for="editing_3">Price: </label>
+            <input type="text" id="editing_3">
+        </div>
+        <br>
+        <div>
+            <button id="OK" onclick="ok()">OK</button>
+            <button id="CANCEL" onclick="cancel()">CANCEL</button>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
